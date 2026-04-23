@@ -4,9 +4,18 @@ local function apply(groups)
   end
 end
 
+local function clear_cache()
+  for key, _ in pairs(package.loaded) do
+    if key:match("^tepidarium%.") then
+      package.loaded[key] = nil
+    end
+  end
+end
+
 local M = {}
 
 function M.load()
+  clear_cache()
   vim.o.termguicolors = true
   vim.cmd("hi clear")
   if vim.fn.exists("syntax_on") == 1 then

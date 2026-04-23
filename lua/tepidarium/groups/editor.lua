@@ -8,7 +8,6 @@ return function()
     NormalFloat  = { fg = P.fg, bg = D.ui_surface },
     FloatBorder  = { fg = D.ui_border, bg = D.ui_surface },
     FloatTitle   = { fg = P.fg, bg = D.ui_surface, bold = true },
-    Comment      = { fg = D.ui_muted, italic = true },
     CursorLine   = { bg = P.bg },
     CursorLineNr = { fg = P.yellow, bold = true },
     LineNr       = { fg = D.ui_muted },
