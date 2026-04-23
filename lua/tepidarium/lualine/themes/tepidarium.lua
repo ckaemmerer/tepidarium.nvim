@@ -6,11 +6,11 @@ M.normal = {
   a = { bg = P.blue, fg = P.black },
   b = { bg = P.black, fg = P.blue },
   c = {
-    bg = P.background,
+    bg = P.bg,
     fg = P.white,
   },
   x = {
-    bg = P.background,
+    bg = P.bg,
     fg = P.white,
   },
 }
