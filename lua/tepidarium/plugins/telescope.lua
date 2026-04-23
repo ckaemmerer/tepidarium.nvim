@@ -4,7 +4,7 @@ local D = require("tepidarium.palette_derived")
 return function()
   return {
     TelescopeNormal         = { fg = D.ui_muted, bg = P.bg },
-    TelescopePromptNormal   = { fg = P.fg, bg = D.ui_surface },
+    TelescopePromptNormal   = { fg = P.fg, bg = D.ui_muted },
     TelescopePromptBorder   = { fg = D.ui_border, bg = D.ui_surface },
     TelescopePromptPrefix   = { fg = P.blue, bg = D.ui_surface },
     TelescopeTitle          = { fg = P.fg, bold = true },
@@ -13,7 +13,7 @@ return function()
     TelescopeResultsBorder  = { fg = D.ui_border, bg = P.bg },
     TelescopeResultsTitle   = { fg = P.fg, bold = true },
     TelescopePreviewNormal  = { fg = P.fg, bg = D.ui_surface },
-    TelescopePreviewBorder  = { fg = D.ui_border, bg = D.ui_surface },
+    TelescopePreviewBorder  = { fg = D.ui_border, bg = D.ui_muted },
     TelescopePreviewTitle   = { fg = P.fg, bg = D.ui_surface, bold = true },
     TelescopeSelection      = { fg = P.fg, bg = D.ui_surface },
     TelescopeSelectionCaret = { fg = P.blue, bg = D.ui_surface },

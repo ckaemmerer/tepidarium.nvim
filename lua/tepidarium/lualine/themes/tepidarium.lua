@@ -7,11 +7,11 @@ M.normal = {
   b = { bg = P.black, fg = P.blue },
   c = {
     bg = P.bg,
-    fg = P.white,
+    fg = P.ui_muted,
   },
   x = {
     bg = P.bg,
-    fg = P.white,
+    fg = P.ui_muted,
   },
 }
 

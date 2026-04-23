@@ -9,7 +9,7 @@ return function()
     ["@lsp.type.class"]        = { fg = P.green },
     ["@lsp.type.interface"]    = { fg = P.green, italic = true },
     ["@lsp.type.struct"]       = { fg = P.green },
-    ["@lsp.type.enum"]         = { fg = P.bright_magenta },
+    ["@lsp.type.enum"]         = { fg = P.green },
     ["@lsp.type.enumMember"]   = { fg = P.bright_magenta },
     ["@lsp.type.function"]     = { fg = P.yellow },
     ["@lsp.type.method"]       = { fg = P.yellow },

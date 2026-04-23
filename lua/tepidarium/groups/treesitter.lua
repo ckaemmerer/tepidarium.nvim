@@ -11,7 +11,7 @@ return function()
 
     -- Constants
     ["@constant"]              = { fg = P.bright_magenta },
-    ["@constant.builtin"]      = { fg = P.bright_magenta },
+    ["@constant.builtin"]      = { fg = P.magenta },
     ["@constant.macro"]        = { fg = P.red },
 
     -- Modules / Namespaces
@@ -27,13 +27,13 @@ return function()
     -- Numbers
     ["@number"]                = { fg = P.bright_magenta },
     ["@number.float"]          = { fg = P.bright_magenta },
-    ["@boolean"]               = { fg = P.bright_magenta },
+    ["@boolean"]               = { fg = P.magenta },
     ["@character"]             = { fg = P.orange },
     ["@character.special"]     = { fg = D.special_string },
 
     -- Types
     ["@type"]                  = { fg = P.green },
-    ["@type.builtin"]          = { fg = P.green },
+    ["@type.builtin"]          = { fg = P.magenta },
     ["@type.definition"]       = { fg = P.green },
     ["@type.qualifier"]        = { fg = P.magenta },
 
@@ -51,16 +51,16 @@ return function()
     ["@keyword.conditional"]   = { fg = P.magenta },
     ["@keyword.repeat"]        = { fg = P.magenta },
     ["@keyword.return"]        = { fg = P.magenta },
-    ["@keyword.exception"]     = { fg = P.red },
-    ["@keyword.import"]        = { fg = P.red },
-    ["@keyword.operator"]      = { fg = D.operator_purple },
+    ["@keyword.exception"]     = { fg = P.magenta },
+    ["@keyword.import"]        = { fg = P.magenta },
+    ["@keyword.operator"]      = { fg = D.magenta },
     ["@keyword.function"]      = { fg = P.magenta },
     ["@keyword.storage"]       = { fg = P.green },
     ["@keyword.directive"]     = { fg = P.red },
     ["@keyword.modifier"]      = { fg = P.magenta },
 
     -- Operators / Punctuation
-    ["@operator"]              = { fg = D.operator_purple },
+    ["@operator"]              = { fg = P.magenta },
     ["@punctuation.bracket"]   = { fg = P.fg },
     ["@punctuation.delimiter"] = { fg = P.fg },
     ["@punctuation.special"]   = { fg = D.special_string },
