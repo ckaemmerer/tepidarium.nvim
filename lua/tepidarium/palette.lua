@@ -7,8 +7,8 @@ local P = {
   bright_red     = "#f87775",
   green          = "#72b134",
   bright_green   = "#b4e981",
-  yellow         = "#dbc040",
-  bright_yellow  = "#fff28c",
+  yellow         = "#f4d95a",
+  bright_yellow  = "#fff07a",
   blue           = "#3c72c5",
   bright_blue    = "#99bef9",
   magenta        = "#c751b0",
@@ -16,7 +16,7 @@ local P = {
   cyan           = "#34b0b1",
   bright_cyan    = "#a5eff0",
   white          = "#ededed",
-  orange         = "#d49540",
+  orange         = "#f2b528",
   purple         = "#9f55c2",
 }
 
