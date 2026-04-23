@@ -1,17 +1,23 @@
 local P = require("tepidarium.palette")
+local D = require("tepidarium.palette_derived")
 
 return function()
   return {
-    FloatBorder             = { fg = P.bright_black, bg = P.bg },
-    TelescopeBorder         = { fg = P.bright_black, bg = P.bg },
-    TelescopePromptBorder   = { fg = P.bright_black, bg = P.bg },
-    TelescopeResultsBorder  = { fg = P.bright_black, bg = P.bg },
-    TelescopePreviewBorder  = { fg = P.bright_black, bg = P.bg },
-    TelescopeNormal         = { fg = P.white, bg = P.bg },
-    TelescopePromptNormal   = { fg = P.bright_white, bg = P.bg },
-    TelescopeResultsNormal  = { fg = P.white, bg = P.bg },
-    TelescopePreviewNormal  = { fg = P.bright_white, bg = P.bg },
-    TelescopeSelection      = { fg = P.bright_white, bg = P.bright_black, bold = true },
-    TelescopeSelectionCaret = { fg = P.blue, bg = P.bright_black },
-    TelescopeMatching       = { fg = P.red, bold = true },  }
+    TelescopeNormal         = { fg = D.ui_muted, bg = P.bg },
+    TelescopePromptNormal   = { fg = P.fg, bg = D.ui_surface },
+    TelescopePromptBorder   = { fg = D.ui_border, bg = D.ui_surface },
+    TelescopePromptPrefix   = { fg = P.blue, bg = D.ui_surface },
+    TelescopePromptTitle    = { fg = P.fg, bg = D.ui_surface, bold = true },
+    TelescopeResultsNormal  = { fg = D.ui_muted, bg = P.bg },
+    TelescopeResultsBorder  = { fg = D.ui_border, bg = P.bg },
+    TelescopeResultsTitle   = { fg = P.fg, bold = true },
+    TelescopePreviewNormal  = { fg = P.fg, bg = D.ui_surface },
+    TelescopePreviewBorder  = { fg = D.ui_border, bg = D.ui_surface },
+    TelescopePreviewTitle   = { fg = P.fg, bg = D.ui_surface, bold = true },
+    TelescopeSelection      = { fg = P.fg, bg = D.ui_surface },
+    TelescopeSelectionCaret = { fg = P.blue, bg = D.ui_surface },
+    TelescopeMatching       = { reverse = true },
+    TelescopeMultiSelection = { fg = P.cyan },
+    TelescopeMultiIcon      = { fg = P.cyan },
+  }
 end
