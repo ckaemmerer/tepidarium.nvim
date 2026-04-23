@@ -8,8 +8,8 @@ local function get_blend_background(background)
     return background
   end
 
-  local palette = require("tepidarium.colorscheme.palette")
-  return palette.background
+  local palette = require("tepidarium.palette")
+  return palette.bg
 end
 
 ---@param hex HexColor
@@ -55,6 +55,26 @@ function M.lighten(hex, amt)
   local green = string.format("%02x", rgb.g)
   local blue = string.format("%02x", rgb.b)
   return "#" .. red .. green .. blue
+end
+
+---@param hex HexColor | "NONE"
+---@param amt number
+function M.darken(hex, amt)
+  return M.lighten(hex, -amt)
+end
+
+---@param hex1 HexColor
+---@param hex2 HexColor
+---@param ratio? number -- 0.0 = hex1, 1.0 = hex2, default 0.5
+function M.midpoint(hex1, hex2, ratio)
+  ratio = ratio or 0.5
+  local rgb1 = hex_to_rgb(hex1)
+  local rgb2 = hex_to_rgb(hex2)
+  return rgb_to_hex({
+    r = math.floor(rgb1.r + (rgb2.r - rgb1.r) * ratio),
+    g = math.floor(rgb1.g + (rgb2.g - rgb1.g) * ratio),
+    b = math.floor(rgb1.b + (rgb2.b - rgb1.b) * ratio),
+  })
 end
 
 ---@param alpha HexColorAlpha
