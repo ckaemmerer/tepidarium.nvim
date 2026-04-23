@@ -67,6 +67,8 @@ end
 ---@param hex2 HexColor
 ---@param ratio? number -- 0.0 = hex1, 1.0 = hex2, default 0.5
 function M.midpoint(hex1, hex2, ratio)
+  -- stylua: ignore
+  if hex1 == "NONE" or hex2 == "NONE" then return "NONE" end
   ratio = ratio or 0.5
   local rgb1 = hex_to_rgb(hex1)
   local rgb2 = hex_to_rgb(hex2)
