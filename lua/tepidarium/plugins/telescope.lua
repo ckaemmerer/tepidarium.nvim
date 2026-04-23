@@ -7,6 +7,7 @@ return function()
     TelescopePromptNormal   = { fg = P.fg, bg = D.ui_surface },
     TelescopePromptBorder   = { fg = D.ui_border, bg = D.ui_surface },
     TelescopePromptPrefix   = { fg = P.blue, bg = D.ui_surface },
+    TelescopeTitle          = { fg = P.fg, bold = true },
     TelescopePromptTitle    = { fg = P.fg, bg = D.ui_surface, bold = true },
     TelescopeResultsNormal  = { fg = D.ui_muted, bg = P.bg },
     TelescopeResultsBorder  = { fg = D.ui_border, bg = P.bg },

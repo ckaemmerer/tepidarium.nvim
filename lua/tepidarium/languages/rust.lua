@@ -9,6 +9,7 @@ return function()
     ["@function.macro.rust"]  = { fg = P.red },
     ["@string.special.rust"]  = { fg = D.special_string },
     ["@label.rust"]           = { fg = P.cyan },
+    ["@lifetime.rust"]        = { fg = P.cyan },
     ["@variable.member.rust"] = { fg = P.fg, italic = true },
   }
 end
