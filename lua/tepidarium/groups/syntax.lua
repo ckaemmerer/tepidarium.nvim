@@ -1,0 +1,41 @@
+local P = require("tepidarium.palette")
+local D = require("tepidarium.palette_derived")
+
+return function()
+  return {
+    Comment      = { fg = D.ui_muted, italic = true },
+    Constant     = { fg = P.bright_magenta },
+    String       = { fg = P.orange },
+    Character    = { fg = P.orange },
+    Number       = { fg = P.bright_magenta },
+    Boolean      = { fg = P.bright_magenta },
+    Float        = { fg = P.bright_magenta },
+    Identifier   = { fg = P.fg },
+    Function     = { fg = P.yellow },
+    Statement    = { fg = P.magenta },
+    Conditional  = { fg = P.magenta },
+    Repeat       = { fg = P.magenta },
+    Label        = { fg = P.magenta },
+    Operator     = { fg = D.operator_purple },
+    Keyword      = { fg = P.magenta },
+    Exception    = { fg = P.red },
+    PreProc      = { fg = P.red },
+    Include      = { fg = P.red },
+    Define       = { fg = P.red },
+    Macro        = { fg = P.red },
+    PreCondit    = { fg = P.red },
+    Type         = { fg = P.green },
+    StorageClass = { fg = P.green },
+    Structure    = { fg = P.green },
+    Typedef      = { fg = P.green },
+    Special      = { fg = P.purple },
+    SpecialChar  = { fg = D.special_string },
+    Delimiter    = { fg = P.fg },
+    SpecialComment = { fg = D.ui_muted, italic = true },
+    Underlined   = { underline = true },
+    Bold         = { bold = true },
+    Italic       = { italic = true },
+    Error        = { fg = P.red },
+    Todo         = { fg = P.orange, bg = P.bg, bold = true },
+  }
+end
